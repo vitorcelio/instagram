@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    z-index: 999;
+}
+
+.img-menu {
+    width: 110px;
+    align-self: center;
+}
+
+.input-menu {
+    align-self: center;
+}
+
+.input-grupo {
+    background-color: rgb(235, 235, 235);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.input-menu i {
+    padding: 7px 10px;
+    color: rgb(135, 135, 135);
+    margin: 0 10px;
+}
+
+.input-menu input {
+    padding: 7px 15px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    background-color: transparent;
+    outline: none;
+}
+
+.nav-menu {
+    align-self: center;
+    width: 220px;
+}
+
+.itens-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-menu li a {
+    font-size: 24px;
+    color: black;
+}
+
+#img-profile {
+    border-radius: 50px;
+}
+
+.body-dropdown{
+    background-color: white;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 101;
+    right: 100px;
+}
+
+.dropdown-perfil{
+    padding: 5px;
+    width: 180px;
+    box-shadow: 0 0 0.6em rgba(163, 163, 163, 0.753);
+    border-radius: 10px;
+    list-style: none;
+}
+
+.dropdown-perfil li {
+    margin: 10px 5px;
+}
+
+.dropdown-perfil li a {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-perfil li:last-child {
+    padding-top: 10px;
+    border-top: 1px solid rgba(199, 199, 199, 0.753);
+}
+
+.hidden-dropdown{
+    display: none;
+}
+
+.img-profile {
+    border: 1px double black;
+}
+
+.foto {
+    display: none;
+}
+
+.messenger {
+    display: none;
+}
+
+.notificacoes {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 0.6em rgba(163, 163, 163, 0.753);
+    border-radius: 10px;
+    width: 500px;
+    height: 320px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+#publicar, #notificacao {
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        justify-content: space-between;
+    }
+
+    .input-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .foto, .messenger {
+        display: block;
+        font-size: 26px;
+        margin: 0 20px;
+        color: black;
+    }
+}

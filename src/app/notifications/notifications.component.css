@@ -1,0 +1,60 @@
+.header-notifications {
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.header-notifications h1 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+}
+
+.notificacao-semana {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 10px;
+}
+
+.notificacao-semana > p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.notificacao-semana > div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notificacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificacao div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-notificacao{
+    border-radius: 50%;
+}
+
+.notificacao p {
+    font-size: 14px;
+}
+
+.notificacao p span {
+    margin-right: 4px;
+}
+
+.notificacao span:nth-child(1){
+    font-weight: 500;
+}
+
+.notificacao span:last-child {
+    color: rgb(135, 135, 135);
+}

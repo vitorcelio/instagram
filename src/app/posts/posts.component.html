@@ -1,0 +1,45 @@
+<div class="posts">
+    <div class="post">
+        <div class="post-header">
+            <div class="post-user">
+                <img src="https://github.com/vitorcelio.png" width="40" alt="" class="story-normal">
+                <div>
+                    <p>vitucelio</p>
+                    <p class="post-localizacao">Caxias, Maranhão</p>
+                </div>
+            </div>
+            <a href="">
+                <i class="bi bi-three-dots"></i>
+            </a>
+        </div>
+        <div class="post-img">
+            <img id="foto" src="https://github.com/vitorcelio.png" alt="">
+            <i id="curtida" class="post-curtida bi bi-heart-fill hidden-dropdown"></i>
+        </div>
+        <div class="botoes">
+            <div class="acoes">
+                <a><i id="like" class="bi bi-heart"></i></a>
+                <a href=""><i class="bi bi-chat"></i></a>
+                <a href=""><i class="bi bi-send"></i></a>
+            </div>
+            <div class="salvar">
+                <a href=""><i class="bi bi-bookmark"></i></a>
+            </div>
+        </div>
+        <div class="curtidas-comentarios">
+            <div class="post-curtidas">
+                <p class="curtidas">Curtido por <a href="">lalay_gomes</a> e <a href="">outras
+                        pessoas</a></p>
+                <p class="post-comentario"><a href="">vitucelio</a> Eu sou vítor célio, sou
+                    desenvolvedor de softwares e amo java!</p>
+                <p><a href="" class="comentarios">Ver todos os 2 comentários</a></p>
+                <small>Há 20 HORAS</small>
+            </div>
+            <form #formComentario="ngForm" class="fazer-comentario">
+                <i class="bi bi-emoji-smile"></i>
+                <input type="text" [(ngModel)]="comentario" name="comentario" id="comentario" placeholder="Adicione um comentário" required>
+                <button [disabled]="formComentario.invalid">Publicar</button>
+            </form>
+        </div>
+    </div>
+</div>

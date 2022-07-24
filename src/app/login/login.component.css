@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 935px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.celular img {
+    height: 42rem;
+}
+
+.login {
+    flex-grow: 1;
+    max-width: 350px;
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.grupo:nth-child(1) {
+    min-height: 19rem;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095F6;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095F6;
+}
+
+.sem-conta {
+    color: rgb(160, 160, 160);
+}
+
+.text-azul {
+    color: #0095F6;
+}
+
+.baixar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.lojas {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app img {
+    width: 140px;
+}
+
+@media (max-width: 860px) {
+    .container {
+        width: 90%;
+    }
+
+    .celular {
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .grupo {
+        border: none;
+        background-color: transparent;
+    }
+}

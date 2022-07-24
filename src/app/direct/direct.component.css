@@ -1,0 +1,219 @@
+main {
+    height: 89vh;
+}
+
+.principal {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: white;
+    height: 85vh;
+}
+
+.borda {
+    border: 1px solid rgb(215, 215, 215);
+}
+
+.borda-cima {
+    border-top: 1px solid rgb(215, 215, 215);
+}
+
+.borda-baixo {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.borda-esquerda {
+    border-left: 1px solid rgb(215, 215, 215);
+}
+
+.borda-direita {
+    border-right: 1px solid rgb(215, 215, 215);
+}
+
+.conversas {
+    max-width: 340px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conversa-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.conversa-header a {
+    color: black;
+    font-size: 20px;
+}
+
+.conversa-header p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.conversa-voltar {
+    display: none;
+}
+
+.conversa-user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.conversa-area {
+    overflow-y: scroll;
+}
+
+.conversa-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.conversa-individual {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.conversa-individual i {
+    font-size: 9px;
+    color: rgb(0, 110, 255);
+}
+
+.conversa-individual-principal {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    gap: 10px;
+}
+
+.conversa-individual-principal img {
+    border-radius: 50%;
+}
+
+.conversa-individual-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.conversa-individual-body div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.conversa-individual-body>p:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.conversa-individual-body>div p:last-child {
+    color: rgb(149, 149, 149);
+    margin-left: 5px;
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.mensagens-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mensagens-default div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 2px solid rgb(39, 39, 39);
+    width: 100px;
+    height: 100px;
+}
+
+.mensagens-default i {
+    font-size: 60px;
+    color: rgb(39, 39, 39);
+}
+
+.mensagens-default h1 {
+    font-weight: 300;
+}
+
+.mensagens-default p {
+    font-size: 13px;
+    color: #8E8E8E;
+}
+
+.mensagens-default button {
+    border: none;
+    padding: 6px 12px;
+    background-color: #0095F6;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        display: flex;
+        margin-top: 0;
+        border-radius: 0;
+        background-color: white;
+        height: 89vh;
+        border: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .principal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .conversas {
+        max-width: 100%;
+        border: none;
+    }
+
+    .conversa-header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .conversa-voltar {
+        display: block;
+    }
+
+    .mensagens {
+        display: none;
+    }
+}

@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="story-logo">
+        <img src="/assets/img/instagram-logo-branca.png" alt="logo insta">
+    </div>
+    <div class="story-view" >  
+        <div class="story-imagem" [style.background-image]="'linear-gradient(to bottom, #00000088, transparent 30%, transparent 30%, transparent 30%, #00000088), url(https://github.com/vitorcelio.png)'">
+            <div class="story-header">
+                <div class="story-barra">
+                    <div *ngFor="let story of storysList" [id]="story.id">
+                        <div [ngClass]="{'barra': storyAtual === story.story}"></div>
+                    </div>
+                </div>
+                <div class="story-info">
+                    <a [routerLink]="['/vitucelio']" class="story-perfil">
+                        <img src="https://github.com/vitorcelio.png" alt="insta vitor">
+                        <p>vitucelio</p>
+                        <p>1h</p>
+                    </a>
+                    <div class="story-botoes">
+                        <p class="amigos-proximos">AMIGOS PRÓXIMOS</p>
+                        <a href="">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="story-footer">
+                <input type="text" name="" id="" placeholder="Responder a vitucelio...">
+                <i class="bi bi-heart"></i>
+            </div>
+        </div>
+        <div class="story-imagem story-ativo" [style.background-image]="'linear-gradient(to bottom, #00000088, transparent 30%, transparent 30%, transparent 30%, #00000088), url('+storyAtual+')'">
+            <div class="story-header">
+                <div class="story-barra">
+                    <div *ngFor="let story of storysList" [id]="story.id">
+                        <div [ngClass]="{'barra': storyAtual === story.story}"></div>
+                    </div>
+                </div>
+                <div class="story-info">
+                    <a [routerLink]="['/vitucelio']" class="story-perfil">
+                        <img src="https://github.com/vitorcelio.png" alt="insta vitor">
+                        <p>vitucelio</p>
+                        <p>1h</p>
+                    </a>
+                    <div class="story-botoes">
+                        <p class="amigos-proximos">AMIGOS PRÓXIMOS</p>
+                        <a href="">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="story-footer">
+                <input type="text" name="" id="" placeholder="Responder a vitucelio...">
+                <i class="bi bi-heart"></i>
+            </div>
+        </div>
+        <div class="story-imagem" [style.background-image]="'linear-gradient(to bottom, #00000088, transparent 30%, transparent 30%, transparent 30%, #00000088), url(https://github.com/naiandersonb.png)'">
+            <div class="story-header">
+                <div class="story-barra">
+                    <div *ngFor="let story of storysList" [id]="story.id">
+                        <div [ngClass]="{'barra': storyAtual === story.story}"></div>
+                    </div>
+                </div>
+                <div class="story-info">
+                    <a [routerLink]="['/vitucelio']" class="story-perfil">
+                        <img src="https://github.com/naiandersonb.png" alt="insta vitor">
+                        <p>vitucelio</p>
+                        <p>1h</p>
+                    </a>
+                    <div class="story-botoes">
+                        <p class="amigos-proximos">AMIGOS PRÓXIMOS</p>
+                        <a href="">
+                            <i class="bi bi-three-dots"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="story-footer">
+                <input type="text" name="" id="" placeholder="Responder a vitucelio...">
+                <i class="bi bi-heart"></i>
+            </div>
+        </div>
+    </div>
+    <a [routerLink]="['/home']" class="story-fechar">
+        <i class="bi bi-x-lg"></i>
+    </a>
+</div>

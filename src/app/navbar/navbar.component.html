@@ -1,0 +1,60 @@
+<header class="menu">
+    <a class="foto" href=""><i class="bi bi-camera"></i></a>
+    <img class="img-menu" src="/assets/img/instagram-logo.png" alt="logo do instagram">
+    <a class="messenger" href=""><i class="bi bi-chat-dots"></i></a>
+    <div class="input-menu">
+        <div class="input-grupo">
+            <i id="icone-pesquisa" class="bi bi-search"></i>
+            <input type="text" placeholder="Pesquisar" id="pesquisar">
+        </div>
+    </div>
+    <nav class="nav-menu">
+        <ul class="itens-menu">
+            <li>
+                <a [routerLink]="['/home']">
+                    <i routerLinkActive="bi bi-house-door-fill" #homeLink="routerLinkActive" class="bi bi-house-door" id="house" [ngClass]="{'bi bi-house-door': !homeLink.isActive}"></i>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/direct/inbox']">
+                    <i routerLinkActive="bi bi-chat-dots-fill" #directLink="routerLinkActive" class="bi bi-chat-dots" id="chat" [ngClass]="{'bi bi-chat-dots': !directLink.isActive}" ></i>
+                </a>
+            </li>
+            <li>
+                <a id="publicar" (click)="disableLink()">
+                    <i id="postar" class="bi bi-plus-square"></i>
+                </a>
+                <div id="modal-publicar" class="hidden-dropdown">
+                    <app-publish></app-publish>
+                </div>
+            </li>
+            <li>
+                <a [routerLink]="['/explore']">
+                    <i routerLinkActive="bi bi-compass-fill" #exploreLink="routerLinkActive" class="bi bi-compass" id="explore" [ngClass]="{'bi bi-compass': !exploreLink.isActive}"></i>
+                </a>
+            </li>
+            <li>
+                <a id="notificacao">
+                    <i routerLinkActive="bi bi-heart-fill" #heartLink="routerLinkActive" id="heart" class="bi bi-heart" [ngClass]="{'bi bi-heart': !heartLink.isActive}"></i>
+                </a>
+               <div id="notificacoes" class="hidden-dropdown">
+                   <app-notifications class="notificacoes"></app-notifications>
+               </div>
+            </li>
+            <li>
+                <a id="profile">
+                    <img [ngClass]="{'img-profile': profileLink.isActive}" id="img-profile" src="https://github.com/vitorcelio.png" alt="vitucelio" width="25">
+                </a>
+                <div class="body-dropdown hidden-dropdown">
+                    <ul class="dropdown-perfil">
+                        <li><a [routerLink]="['/vitucelio']" routerLinkActive #profileLink="routerLinkActive"><i class="bi bi-person-circle"></i> Perfil</a></li>
+                        <li><a href=""><i class="bi bi-bookmark"></i> Salvos</a></li>
+                        <li><a href=""><i class="bi bi-gear-wide"></i> Configurações</a></li>
+                        <li><a href=""><i class="bi bi-arrow-repeat"></i> Trocar de conta</a></li>
+                        <li><a [routerLink]="['']">Sair</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header> 
